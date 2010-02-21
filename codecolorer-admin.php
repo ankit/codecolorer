@@ -103,6 +103,14 @@ class CodeColorerAdmin {
           </tr>
 
           <tr valign="top">
+            <th scope="row"><label for="codecolorer_font_size"><?php _e('Font size', 'codecolorer') ?>:</label></th>
+            <td>
+              <input name="codecolorer_font_size" type="text" class="small-text" size="60" id="codecolorer_font_size" value="<?php echo get_option('codecolorer_font_size') ?>"/>
+              <span class="description"><?php _e('px. Font size of the code', 'codecolorer') ?></span>
+            </td>
+          </tr>
+
+          <tr valign="top">
             <th scope="row"><label for="codecolorer_theme"><?php _e('Theme', 'codecolorer') ?>:</label></th>
             <td>
               <select name="codecolorer_theme" id="codecolorer_theme">

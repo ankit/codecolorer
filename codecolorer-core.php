@@ -137,7 +137,8 @@ class CodeColorer {
       $this->geshi = new GeSHi();
       $this->geshi->enable_line_numbers(GESHI_NO_LINE_NUMBERS, 1);
       if (is_feed()) {
-        $this->geshi->set_overall_style('padding:5px;font:normal 12px/1.4em Monaco, Lucida Console, monospace;white-space:nowrap');
+        $this->geshi->set_overall_style('padding:5px;font-family:Monaco, Lucida Console, monospace;white-space:nowrap');
+				$this->geshi->set_overall_style('font-size:'.$options['font_size'].'px;', true);
       }
     }
 
@@ -146,10 +147,12 @@ class CodeColorer {
     $geshi->set_language($options['lang']);
     $geshi->set_overall_class('codecolorer');
     $geshi->set_tab_width($options['tab_size']);
+		$geshi->set_overall_style('font-size:'.$options['font_size'].'px;', true);
     if (!is_feed()) {
       $geshi->enable_classes($options['theme'] != 'geshi');
-      if ($options['nowrap']) {
-        $geshi->set_overall_style('white-space:nowrap');
+      if ($options['nowrap']) {	
+        $geshi->set_overall_style('white-space:nowrap;');
+        $geshi->set_overall_style('font-size:'.$options['font_size'].'px;', true);
       } else {
         $geshi->set_overall_style('');
       }
@@ -173,9 +176,9 @@ class CodeColorer {
     if ($options['line_numbers'] && !$options['inline']) {
       $table = '<table cellspacing="0" cellpadding="0"><tbody><tr><td ';
       if (is_feed()) {
-        $table .= 'style="padding:5px;text-align:center;color:#888888;background-color:#EEEEEE;border-right: 1px solid #9F9F9F;font: normal 12px/1.4em Monaco, Lucida Console, monospace;"';
+        $table .= 'style="padding:5px;text-align:center;color:#888888;background-color:#EEEEEE;border-right: 1px solid #9F9F9F;font-family: Monaco, Lucida Console, monospace;font-size:11px"';
       } else {
-        $table .= 'class="line-numbers"';
+        $table .= 'class="line-numbers" style="font-size:'.$options['font_size'].'px;"';
       }
       $table .= '><div>';
       for ($i = 0, $count = substr_count($result, '<br />') + 1; $i < $count; $i++) {
@@ -191,7 +194,7 @@ class CodeColorer {
     $custom_css_class = empty($options['class']) ? '' : ' ' . $options['class'];
     if ($options['inline']) {
       $theme = empty($options['inline_theme']) ? 'default' : $options['inline_theme'];
-      $result  = '<code class="codecolorer ' . $options['lang'] . ' ' . $theme . $custom_css_class . '">';
+      $result  = '<code class="codecolorer ' . $options['lang'] . ' ' . $theme . $custom_css_class . '" style="font-size:'.$options['font_size'].'px">';
       $result .= '<span class="' . $options['lang'] . '">' . $html . '</span>';
       $result .= '</code>';
     } else {

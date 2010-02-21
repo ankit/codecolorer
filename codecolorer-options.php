@@ -138,7 +138,14 @@ class CodeColorerOptions {
     } else {
       $options['tab_size'] = intval($options['tab_size']);
     }
-
+    
+    // Font size (int)
+    if (!isset($options['font_size'])) {
+      $options['font_size'] = intval(get_option('codecolorer_font_size'));
+    } else {
+      $options['font_size'] = intval($options['font_size']);
+    }
+    
     // Line numbers (bool)
     if (!isset($options['line_numbers'])) {
       $options['line_numbers'] = CodeColorerOptions::ParseBoolean(get_option('codecolorer_line_numbers'));

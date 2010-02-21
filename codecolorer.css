@@ -2,7 +2,7 @@
 .codecolorer { padding: 5px; text-align: left; }
 code.codecolorer { padding: 2px; }
 .codecolorer-container { margin-bottom: 10px; text-align: left; }
-.codecolorer, .codecolorer *, .codecolorer-container, .codecolorer-container * { font: 13px/1.4em Monaco, Lucida Console, monospace }
+.codecolorer, .codecolorer *, .codecolorer-container, .codecolorer-container * { font-family: Monaco, Lucida Console, monospace; letter-spacing:normal; }
 
 .codecolorer-container table { border: 0px; }
 .codecolorer-container table td { margin: 0px; padding: 0px; border: 0px; }
@@ -183,24 +183,24 @@ code.codecolorer { padding: 2px; }
 .vibrant .xml .re0 { color: #339999; }
 
 /* Railcasts theme */
-.railcasts .codecolorer-container, .codecolorer { color: #E6E1DC; background-color: #2B2B2B; }
-/* Comment */
-.railcasts .codecolorer .co0, .codecolorer .co1, .codecolorer .co2, .codecolorer .co3, .codecolorer .co4, .codecolorer .coMULTI { color: #BC9458; font-style: italic; }
-/* Constant */
-.railcasts .codecolorer .nu0, .codecolorer .re3 { color: #6D9CBE; }
-/* String */
-.railcasts .codecolorer .st0, .codecolorer .st_h, .codecolorer .es0, .codecolorer .es1 { color: #A5C261; }
-/* Entity */
-.railcasts .codecolorer .me1, .codecolorer .me2 { color: #FFC66D; }
-/* Keyword */
-.railcasts .codecolorer .kw1, .codecolorer .kw2, .codecolorer .sy1 { color: #CC7833; }
-/* Storage */
-.railcasts .codecolorer .kw3, .codecolorer .kw4, .codecolorer .kw5, .codecolorer .re2 { color: #6E9CBE; }
-/* Variable */
-.railcasts .codecolorer .re0, .codecolorer .re1 { color: #D0D0FF; }
-/* Global color */
-.railcasts .codecolorer .br0, .codecolorer .sy0 { color: #E6E1DC; }
-/* Storage */
-.railcasts .xml .re1 { color: #6E9CBE; }
-/* Constant */
-.railcasts .xml .re0 { color: #6D9CBE; }
+.railcasts, .railcasts .codecolorer { color: #E6E1DC; background-color: #2B2B2B; }
+.railcasts .codecolorer .co0, .railcasts .codecolorer .co1, .railcasts .codecolorer .co2, .railcasts .codecolorer .co3, .railcasts .codecolorer .co4, .railcasts .codecolorer .coMULTI 
+	{ color: #BC9458; font-style: italic; }
+.railcasts .codecolorer .nu0, .railcasts .codecolorer .re3 
+	{ color: #6D9CBE; }
+.railcasts .codecolorer .st0, .railcasts .codecolorer .st_h, .railcasts .codecolorer .es0, .railcasts .codecolorer .es1 
+	{ color: #A5C261; }
+.railcasts .codecolorer .me1, .railcasts .codecolorer .me2 
+	{ color: #FFC66D; }
+.railcasts .codecolorer .kw1, .railcasts .codecolorer .kw2, .railcasts .codecolorer .sy1 
+	{ color: #CC7833; }
+.railcasts .codecolorer .kw3, .railcasts .codecolorer .kw4, .railcasts .codecolorer .kw5, .railcasts .codecolorer .re2 
+	{ color: #6E9CBE; }
+.railcasts .codecolorer .railcasts .re0, .railcasts .codecolorer .re1
+	{ color: #D0D0FF; }
+.railcasts .codecolorer .railcasts .br0, .codecolorer .railcasts .sy0
+	{ color: #E6E1DC; }
+.railcasts .xml .re1 
+	{ color: #6E9CBE; }
+.railcasts .xml .re0 
+	{ color: #6D9CBE; }

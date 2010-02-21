@@ -58,6 +58,7 @@ class CodeColorerLoader {
     add_option('codecolorer_line_numbers', false);
     add_option('codecolorer_disable_keyword_linking', false);
     add_option('codecolorer_tab_size', 4);
+    add_option('codecolorer_font_size', 13);
     add_option('codecolorer_theme', '');
     add_option('codecolorer_inline_theme', '');
 
@@ -123,6 +124,7 @@ class CodeColorerLoader {
     register_setting('codecolorer', 'codecolorer_line_numbers', '');
     register_setting('codecolorer', 'codecolorer_disable_keyword_linking', array('CodeColorerOptions', 'SanitizeBoolean'));
     register_setting('codecolorer', 'codecolorer_tab_size', 'intval');
+    register_setting('codecolorer', 'codecolorer_font_size', 'intval');
     register_setting('codecolorer', 'codecolorer_theme', '');
     register_setting('codecolorer', 'codecolorer_inline_theme', '');
 
