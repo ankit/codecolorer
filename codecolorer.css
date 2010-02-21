@@ -184,6 +184,9 @@ code.codecolorer { padding: 2px; }
 
 /* Railcasts theme */
 .railcasts, .railcasts .codecolorer { color: #E6E1DC; background-color: #2B2B2B; }
+/* Selection Color */
+.railcasts ::selection, .railcasts .codecolorer ::selection { background:#adb9d2; }
+.railcasts ::-moz-selection, .railcasts .codecolorer ::-moz-selection { background:#566381; }
 .railcasts .codecolorer .co0, .railcasts .codecolorer .co1, .railcasts .codecolorer .co2, .railcasts .codecolorer .co3, .railcasts .codecolorer .co4, .railcasts .codecolorer .coMULTI 
 	{ color: #BC9458; font-style: italic; }
 .railcasts .codecolorer .nu0, .railcasts .codecolorer .re3 
