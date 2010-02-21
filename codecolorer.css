@@ -181,3 +181,26 @@ code.codecolorer { padding: 2px; }
 	{ color: #FFFFFF; }
 .vibrant .xml .re1 { color: #FFCC00; }
 .vibrant .xml .re0 { color: #339999; }
+
+/* Railcasts theme */
+.railcasts .codecolorer-container, .codecolorer { color: #E6E1DC; background-color: #2B2B2B; }
+/* Comment */
+.railcasts .codecolorer .co0, .codecolorer .co1, .codecolorer .co2, .codecolorer .co3, .codecolorer .co4, .codecolorer .coMULTI { color: #BC9458; font-style: italic; }
+/* Constant */
+.railcasts .codecolorer .nu0, .codecolorer .re3 { color: #6D9CBE; }
+/* String */
+.railcasts .codecolorer .st0, .codecolorer .st_h, .codecolorer .es0, .codecolorer .es1 { color: #A5C261; }
+/* Entity */
+.railcasts .codecolorer .me1, .codecolorer .me2 { color: #FFC66D; }
+/* Keyword */
+.railcasts .codecolorer .kw1, .codecolorer .kw2, .codecolorer .sy1 { color: #CC7833; }
+/* Storage */
+.railcasts .codecolorer .kw3, .codecolorer .kw4, .codecolorer .kw5, .codecolorer .re2 { color: #6E9CBE; }
+/* Variable */
+.railcasts .codecolorer .re0, .codecolorer .re1 { color: #D0D0FF; }
+/* Global color */
+.railcasts .codecolorer .br0, .codecolorer .sy0 { color: #E6E1DC; }
+/* Storage */
+.railcasts .xml .re1 { color: #6E9CBE; }
+/* Constant */
+.railcasts .xml .re0 { color: #6D9CBE; }
