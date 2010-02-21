@@ -198,7 +198,7 @@ code.codecolorer { padding: 2px; }
 	{ color: #6E9CBE; }
 .railcasts .codecolorer .railcasts .re0, .railcasts .codecolorer .re1
 	{ color: #D0D0FF; }
-.railcasts .codecolorer .railcasts .br0, .codecolorer .railcasts .sy0
+.railcasts .codecolorer .br0,  .railcasts .codecolorer .sy0
 	{ color: #E6E1DC; }
 .railcasts .xml .re1 
 	{ color: #6E9CBE; }
